@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section id="parte_1" class="center_container">
+    <div class="flex_column window round_border">
+      <label class="flex_column center_container">
+        Ingrese la palabra secreta
+        <input class="space" type="password" id="palabra_secreta">
+      </label>
+      <div class="submit round_border" onclick="guardarPalabra()">Guardar palabra</div>
+    </div>
+  </section>
+
+
+  <section class="page_flex" style="display: none" id="juego">
+    <div id="vidas"></div>
+    <div id="palabra_guionada"></div>
+    <div id="teclado">
+    </div>
+  </section>
+
+
+  <section style="display: none" id="fin_del_juego">
+    <div id="perdio" stlye="display: none;">
+      Perdiste!  
+    </div>
+    <div id="gano" stlye="display: none;">
+      Ganaste!
+    </div>
+    <div class="submit round_border" onclick="jugarDeNuevo()">Jugar de nuevo</div>
+  </section>
+
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

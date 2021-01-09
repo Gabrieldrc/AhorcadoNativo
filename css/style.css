@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#parte_1 {
+  background-color: #42FF6B;
+}
+
+#juego {
+  background-color: #B33620;
+  color: white;
+}
+
+.center_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.round_border {
+  border-radius: 10px;
+}
+
+.window {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #0D9E2C;
+  border-top: 40px solid #0D9E2C;
+  background-color: #25EB50;
+  color: white;
+}
+
+.submit {
+  background-color: #ED2F46;
+  width: fit-content;
+  padding: 8px;
+  margin: 20px auto 10px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.submit:active {
+  background-color: white;
+  color: #ED2F46;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.page_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+#teclado {
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto;
+  background-color: rgb(199, 83, 62);
+}
+
+#teclado .tecla {
+  font-size: 24px;
+  color: white;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6347;
+  margin: 2px;
+}
+
+#teclado .tecla:active {
+  color: #ff6347;
+  background-color: white;
+}
+
+#palabra_guionada {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+#palabra_guionada .letra{
+  color: #52FFB5;
+  font-size: 24px;
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+#vidas {
+  display: block;
+  /* flex-direction: row; */
+  width: fit-content;
+  margin: auto;
+}
+
+.vidas_icono {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #52FFB5;
+  border: 4px solid #0EB36D;
+  border-radius: 50px;
+}
+
+#fin_del_juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FAD13E;
+}
+
+#perdio, #gano {
+  font-size: 50px;
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  color: #0918AD;
+}
